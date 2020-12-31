@@ -12,6 +12,11 @@ clickHereButton.addEventListener("click",function(){
         upperUnderBackground.classList.toggle("uppersiteMove");
         resutlInputName.innerHTML = NameGetValue.value;
         underVideo.play();
+        setTimeout(function(){
+            imageMovingLeftSite.classList.remove("left-move");
+            imageMovingRightSite.classList.remove("right-move");
+            upperUnderBackground.classList.remove("uppersiteMove");
+        },30000)
 
     }
     else{
