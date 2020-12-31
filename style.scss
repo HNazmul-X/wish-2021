@@ -1,0 +1,149 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:sobujNolua;
+}
+@font-face {
+  font-family: sobujNolua;
+  src: url(font/lalsboubjnoluya.ttf);
+}
+body{
+    background:#08131f;
+    overflow-x: hidden;
+}
+.uppersiteMove{
+    animation:ssd;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ssd{
+    0%{
+        background:transparent;
+        display: inline;
+    }
+    100%{
+        background:transparent;
+        display:none !important;
+    }
+}
+
+#upperSite{
+    background:#08131f;
+    transition: display 2s;
+}
+.right-move{
+    transform: translateX(300px);
+    transition: 2s;
+}
+.left-move{
+    transform: translateX(-300px);
+    transition: 2s;
+}
+div.nav{
+    background:#0099ff;
+    display: block;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+
+       li{
+           list-style: none;
+        &.image{
+            img{
+                width:30px;
+                border-radius:50%;
+                vertical-align: middle;
+                margin-right:5px;
+            }
+        }
+           a{
+               display:inline-block;
+               padding:10px 20px;
+               text-decoration:none;
+               color:white;
+               font-size:20px;
+               vertical-align: middle;
+            
+           }
+       }
+    }
+
+}
+.image-slide{
+    .row.a{
+        .a{
+            text-align:right;
+            padding:0px;
+            transition: 2s;
+        }
+        .b{
+            text-align:left;
+            padding:0px;
+            transition: 2s;
+        }
+    }
+    
+}
+.takeName{
+    width:200px;
+    margin:auto;
+    margin-bottom:20px;
+    input{
+        font-size:20px;
+        width:100%;
+        border:none;
+        padding:10px;
+        border-radius:5px;
+        margin-bottom:10px;
+    }
+    button{
+        width:100%;
+    }
+}
+
+.all-under{
+    position: fixed;
+    text-align: center;
+    width:100%;
+    top:0px;
+    z-index: -5;
+    left:0px;
+    video{
+        width:500px;
+        display: inherit;
+        margin:auto;
+        margin-bottom:20px;
+    }
+    .underBanner-text{
+        color:goldenrod;
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width:700px){
+    .container{
+        width:100% !important;
+    }
+    .all-under{
+    position: fixed;
+    width:100%;
+    top:0px;
+    z-index: -5;
+    left:0px;
+    video{
+        width:100%;
+    }
+    .underBanner-text{
+        color:goldenrod;
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+
+}
