@@ -145,6 +145,7 @@ div.nav ul li a {
   top: 0px;
   z-index: -5;
   left: 0px;
+  background: #08131f;
   overflow-y: scroll;
 }
 
